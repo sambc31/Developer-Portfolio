@@ -1,0 +1,259 @@
+/* Layout and Container */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.bg-light {
+  background-color: var(--light-bg);
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.card {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: var(--card-shadow);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border-color);
+
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+  .nav-links a:hover {
+  color: var(--primary-color);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+
+/* Home Section */
+.home-section {
+  padding: 70px 0;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.profile-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary-color);
+}
+
+.home-text {
+  flex: 1;
+}
+
+.name {
+  font-size: 2.2rem;
+  color: var(--text-dark);
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.college {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 15px;
+}
+
+.intro {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+/* Action Button */
+
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+/* About Section */
+.about-card {
+  font-size: 1.05rem;
+  color: var(--text-dark);
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Skills Section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  text-align: center;
+  color: var(--primary-color);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 5px;
+  color : black;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Education Section */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.education-card h3 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.education-card h4 {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+.education-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+.marks-tag {
+  display: inline-block;
+  color: var(--primary-color);
+  font-size: 0.95rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.status-tag {
+  display: inline-block;
+  color: var(--white);
+  background-color: var(--primary-color);
+  font-size: 0.85rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.location, .degree {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+/* Achievements Section */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.achievement-card h3 {
+  font-size: 1.15rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.achievement-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Contact Section */
+.contact-card {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 35px;
+}
+
+.contact-name {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+  color: var(--text-dark);
+}
+
+.contact-info a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  word-break: break-all;
+}
