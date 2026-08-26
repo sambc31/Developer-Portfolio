@@ -151,6 +151,13 @@
   justify-content: center;
 }
 
+.skills-subtitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
 .badge {
   display: inline-block;
   margin-top: 5px;
@@ -256,4 +263,11 @@
   text-decoration: none;
   font-weight: 500;
   word-break: break-all;
+}
+
+.address {
+  font-size: 1rem;
+  color: var(--primary-color);
+  margin-top: 5px;
+  line-height: 1.5;
 }

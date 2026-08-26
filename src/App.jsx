@@ -61,18 +61,50 @@ function App() {
           <h2 className="section-title">Skills</h2>
           <div className="skills-grid">
             <div className="card skill-card">
-              <h3>MS Office</h3>
+              <h3><strong>Frontend</strong></h3>
+              <div className="skills-subtitle">
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>React Router</li>
+                <li>Material UI</li>
+              </ul>
+              </div>
             </div>
             <div className="card skill-card">
-              <h3>Canva</h3>
+              <h3><strong>Programming</strong></h3>
+              <div className="skills-subtitle">
+              <ul>
+                <li>Python( Learning)</li>
+                <li>JavaScript</li>
+                <li>C</li>
+              </ul>
+              </div>
             </div>
             <div className="card skill-card">
-              <h3>HTML</h3>
-              <span className="badge">Currently Learning</span>
+              <h3><strong>Tools & Development</strong></h3>
+              <div className="skills-subtitle">
+              <ul>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>VS Code</li>
+                <li>Responsive Web Design</li>
+                <li>REST API basics</li>
+              </ul>
+              </div>
             </div>
             <div className="card skill-card">
-              <h3>Python</h3>
-              <span className="badge">Currently Learning</span>
+              <h3><strong>AI & Data Science</strong></h3>
+              <div className="skills-subtitle">
+              <ul>
+                <li>Python for Data Science</li>
+                <li>NumPy</li>
+                <li>Data Visualization</li>
+                <li>Machine Learning fundamentals</li>
+              </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -177,6 +209,23 @@ function App() {
                 >
                   https://www.linkedin.com/in/sam-branham-christopher-i-
                 </a>
+              </p>
+
+              <p> 
+                <strong>Phone: </strong>
+                <a href="tel:+919789358734" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                >
+                  +91 9789358734
+                </a>
+              </p>
+
+              <p>
+                <strong>Address: </strong>
+                <div className="address"> <strong>
+                  No. 25, Viswanathapuram 1st Street, Coimbatore , Tamil Nadu - 641034
+                </strong></div>
               </p>
             </div>
           </div>
