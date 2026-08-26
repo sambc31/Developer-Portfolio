@@ -8,7 +8,7 @@ function App() {
       {/* Navigation Header */}
       <header className="navbar">
         <div className="nav-container">
-          <h1 className="nav-logo">Developer Portfolio</h1>
+          <h1 className="nav-logo">Welcome to "My Portfolio"  </h1>
           <nav>
             <ul className="nav-links">
               <li><a href="#home">Home</a></li>
@@ -33,11 +33,11 @@ function App() {
             />
           </div>
           <div className="home-text">
-            <h1 className="name">Sam Branham Christopher I</h1>
+            <h1 className="name">HELLO , I'm </h1> <h1 className="name"><strong>Sam Branham Christopher I</strong></h1>
             <h2 className="title">B.Tech Artificial Intelligence & Data Science Student</h2>
             <h3 className="college">Rathinam Technical Campus</h3>
             <p className="intro">
-              A fresher student at Rathinam Technical Campus, currently pursuing B.Tech Artificial Intelligence and Data Science. Interested in software development, learning new skills and building projects.
+              A fresher student at <strong>Rathinam Technical Campus</strong>, currently pursuing <strong>B.Tech Artificial Intelligence and Data Science</strong>. Interested in software development, learning new skills and building projects.
             </p>
           </div>
         </div>
@@ -222,9 +222,9 @@ function App() {
               </p>
 
               <p>
-                <strong>Address: </strong>
+                <strong>Location: </strong>
                 <div className="address"> <strong>
-                  No. 25, Viswanathapuram 1st Street, Coimbatore , Tamil Nadu - 641034
+                  Coimbatore , Tamil Nadu
                 </strong></div>
               </p>
             </div>
