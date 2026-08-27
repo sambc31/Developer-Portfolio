@@ -595,7 +595,7 @@ My goal is to continuously improve my technical skills, build meaningful project
                   </span>
 
                   <strong>
-                    sambranhamchristopher@gmail.com
+                  sambranhamchristopher@gmail.com
                   </strong>
                 </div>
 
