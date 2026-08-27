@@ -656,8 +656,18 @@ My goal is to continuously improve my technical skills, build meaningful project
 
       </section>
 
+    <footer className="simple-footer">
+
+      <p><strong>
+         © 2026 Sam Branham Christopher. All Rights Reserved.
+      </strong></p>
+
+    </footer>
+
       </div>
+
   );
+
 }
 
 export default App;
