@@ -271,3 +271,81 @@
   margin-top: 5px;
   line-height: 1.5;
 }
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  /*General*/
+  body{
+    overflow-x: hidden;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+ /*Navigation*/
+ nav {
+    padding: 15px 20px;
+  }
+
+  nav ul{
+    flex-direction: column;
+    gap: 15px;
+  }
+/* Headings */
+  h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  /* Sections */
+  section {
+    padding: 50px 20px;
+  }
+
+  /* Flex layouts */
+  .row {
+    flex-direction: column;
+  }
+
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Buttons */
+  button,
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+
+/* Smaller phones */
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+}
