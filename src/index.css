@@ -10,11 +10,17 @@
   --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+/* Reset */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+
+/* Page Settings */
 
 html {
   scroll-behavior: smooth;
@@ -25,4 +31,13 @@ body {
   background-color: var(--white);
   color: var(--text-dark);
   line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }

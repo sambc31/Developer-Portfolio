@@ -1,4 +1,5 @@
-/* Layout and Container */
+/* Main Layout */
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -28,12 +29,15 @@
   box-shadow: var(--card-shadow);
 }
 
+
+/* Navigation */
+
 .navbar {
   position: sticky;
   top: 0;
+  z-index: 1000;
   background-color: var(--white);
   border-bottom: 1px solid var(--border-color);
-
 }
 
 .nav-container {
@@ -51,6 +55,12 @@
   font-weight: bold;
 }
 
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
 .nav-links a {
   text-decoration: none;
   font-size: 1rem;
@@ -58,18 +68,14 @@
   font-weight: 500;
   transition: color 0.3s ease;
 }
-  .nav-links a:hover {
-  color: var(--text-dark);
-}
 
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 20px;
+.nav-links a:hover {
+  color: var(--text-dark);
 }
 
 
 /* Home Section */
+
 .home-section {
   padding: 70px 0;
 }
@@ -95,7 +101,7 @@
 .name {
   font-size: 2.2rem;
   color: var(--text-dark);
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .title {
@@ -118,14 +124,9 @@
   line-height: 1.7;
 }
 
-/* Action Button */
-
-
-.btn-primary:hover {
-  background-color: var(--primary-hover);
-}
 
 /* About Section */
+
 .about-card {
   font-size: 1.05rem;
   color: var(--text-dark);
@@ -134,7 +135,9 @@
   margin: 0 auto;
 }
 
+
 /* Skills Section */
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -142,33 +145,28 @@
 }
 
 .skill-card {
-  text-align: center;
   color: var(--primary-color);
   padding: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
-.skills-subtitle {
-  font-size: 0.9rem;
-  font-weight: 500;
+.skill-card h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.skill-card ul {
+  padding-left: 20px;
   color: var(--text-dark);
-  margin-bottom: 10px;
 }
 
-.badge {
-  display: inline-block;
-  margin-top: 5px;
-  color : black;
-  font-size: 0.8rem;
-  padding: 4px 10px;
-  border-radius: 5px;
-  font-weight: bold;
+.skill-card li {
+  margin-bottom: 7px;
 }
+
 
 /* Education Section */
+
 .education-list {
   display: flex;
   flex-direction: column;
@@ -188,11 +186,13 @@
   color: var(--text-dark);
   margin-bottom: 4px;
 }
+
 .education-card p {
   color: var(--text-muted);
   font-size: 0.95rem;
   margin-bottom: 10px;
 }
+
 .marks-tag {
   display: inline-block;
   color: var(--primary-color);
@@ -212,13 +212,16 @@
   font-weight: bold;
 }
 
-.location, .degree {
+.location,
+.degree {
   color: var(--text-muted);
   font-size: 0.95rem;
   margin-bottom: 10px;
 }
 
+
 /* Achievements Section */
+
 .achievements-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -234,11 +237,12 @@
 .achievement-card p {
   color: var(--text-muted);
   font-size: 0.95rem;
-  margin-bottom: 15px;
   line-height: 1.6;
 }
 
+
 /* Contact Section */
+
 .contact-card {
   max-width: 600px;
   margin: 0 auto;
@@ -265,87 +269,137 @@
   word-break: break-all;
 }
 
-.address {
-  font-size: 1rem;
-  color: var(--primary-color);
-  margin-top: 5px;
-  line-height: 1.5;
+.contact-info a:hover {
+  text-decoration: underline;
 }
 
+.address {
+  color: var(--text-dark);
+}
+
+
 /* Mobile Responsive Design */
+
 @media (max-width: 768px) {
-  /*General*/
-  body{
+
+  body {
     overflow-x: hidden;
   }
+
   .container {
     width: 90%;
-    margin: 0 auto;
-  }
- /*Navigation*/
- nav {
-    padding: 15px 20px;
+    padding: 0;
   }
 
-  nav ul{
+  /* Navigation */
+
+  .nav-container {
     flex-direction: column;
-    gap: 15px;
-  }
-/* Headings */
-  h1 {
-    font-size: 36px;
-    line-height: 1.2;
+    gap: 12px;
   }
 
-  h2 {
-    font-size: 28px;
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 15px;
   }
 
-  h3 {
-    font-size: 22px;
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  /* Home */
+
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .profile-photo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 1.15rem;
   }
 
   /* Sections */
-  section {
-    padding: 50px 20px;
+
+  .section {
+    padding: 50px 0;
   }
 
-  /* Flex layouts */
-  .row {
-    flex-direction: column;
+  .section-title {
+    font-size: 1.6rem;
   }
 
-  /* Images */
-  img {
-    max-width: 100%;
-    height: auto;
+  /* Skills */
+
+  .skills-grid,
+  .achievements-grid {
+    grid-template-columns: 1fr;
   }
 
-  /* Buttons */
-  button,
-  .btn {
-    width: 100%;
-    max-width: 300px;
-  }
 }
 
 
-/* Smaller phones */
+/* Smaller Phones */
+
 @media (max-width: 480px) {
 
-  h1 {
-    font-size: 30px;
+  .nav-container {
+    padding: 12px 10px;
   }
 
-  h2 {
-    font-size: 24px;
+  .nav-logo {
+    font-size: 1.15rem;
   }
 
-  p {
-    font-size: 15px;
+  .nav-links {
+    gap: 8px 12px;
   }
 
-  section {
-    padding: 40px 15px;
+  .nav-links a {
+    font-size: 0.8rem;
   }
+
+  .container {
+    width: 92%;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .name {
+    font-size: 1.7rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .college {
+    font-size: 1rem;
+  }
+
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .contact-card {
+    padding: 25px 15px;
+  }
+
 }
