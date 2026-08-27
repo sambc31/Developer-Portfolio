@@ -494,32 +494,24 @@ My goal is to continuously improve my technical skills, build meaningful project
 
       </section>
 
-      <section
-        id="contact"
-        className="section contact-section"
-      >
 
+      <section id="contact" className="section contact-section">
         <div className="container">
-
           <h2 className="section-title">
             Let's Connect
           </h2>
 
-
           <div className="contact-wrapper">
 
             <div className="contact-intro">
-
               <span className="contact-label">
                 GET IN TOUCH
               </span>
-
 
               <h3>
                 Let's build something
                 <span> great together.</span>
               </h3>
-
 
               <p>
                 I'm always interested in learning, building projects,
@@ -535,7 +527,6 @@ My goal is to continuously improve my technical skills, build meaningful project
                   rel="noopener noreferrer"
                   className="social-link"
                 >
-
                   <span className="social-icon">
                     ⌘
                   </span>
@@ -547,17 +538,15 @@ My goal is to continuously improve my technical skills, build meaningful project
                   <span className="arrow">
                     ↗
                   </span>
-
                 </a>
 
-
+             
                 <a
                   href="https://www.linkedin.com/in/sam-branham-christopher-i-"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-link"
                 >
-
                   <span className="social-icon">
                     in
                   </span>
@@ -569,53 +558,66 @@ My goal is to continuously improve my technical skills, build meaningful project
                   <span className="arrow">
                     ↗
                   </span>
+                </a>
 
+              
+                <a
+                  href="https://www.instagram.com/sbc.chronicle.22?igsi=MWU4NGdjNmY1YmY0dA=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link"
+                >
+                  <span className="social-icon">
+                    🅾
+                  </span>
+
+                  <span>
+                    Instagram
+                  </span>
+
+                  <span className="arrow">
+                    ↗
+                  </span>
                 </a>
 
               </div>
-
             </div>
-
 
             <div className="contact-details">
 
-              {/* Email */}
               <a
                 href="mailto:sambranhamchristopher@gmail.com"
                 className="contact-detail"
               >
-
                 <div className="detail-icon">
                   ✉
                 </div>
 
-                <div>
+                <div className="detail-content">
                   <span>
                     Email
                   </span>
 
                   <strong>
-                  sambranhamchristopher@gmail.com
+                    sambranhamchristopher@gmail.com
                   </strong>
                 </div>
 
                 <span className="detail-arrow">
                   →
                 </span>
-
               </a>
 
-
+            
               <a
                 href="tel:+919789358734"
                 className="contact-detail"
               >
-
                 <div className="detail-icon">
                   ☎
                 </div>
 
-                <div>
+                <div className="detail-content">
                   <span>
                     Phone
                   </span>
@@ -628,17 +630,14 @@ My goal is to continuously improve my technical skills, build meaningful project
                 <span className="detail-arrow">
                   →
                 </span>
-
               </a>
 
-
               <div className="contact-detail">
-
                 <div className="detail-icon">
                   ⌖
                 </div>
 
-                <div>
+                <div className="detail-content">
                   <span>
                     Location
                   </span>
@@ -647,7 +646,6 @@ My goal is to continuously improve my technical skills, build meaningful project
                     Coimbatore, Tamil Nadu
                   </strong>
                 </div>
-
               </div>
 
             </div>
@@ -658,7 +656,7 @@ My goal is to continuously improve my technical skills, build meaningful project
 
       </section>
 
-    </div>
+      </div>
   );
 }
 
