@@ -189,7 +189,6 @@ function App() {
 
             </div>
 
-
             {/* Description */}
             <p className="hero-description">
               A fresher student at{' '}
