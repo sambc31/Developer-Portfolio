@@ -7,7 +7,7 @@ function App() {
     <div className="portfolio">
 
       {/* Navigation Header */}
-      <header className="navbar">
+      <header className="navbar navbar-card">
         <div className="nav-container">
           <h1 className="nav-logo">My Portfolio</h1>
 
@@ -37,6 +37,9 @@ function App() {
           </div>
 
           <div className="home-text">
+
+            <p className="intro-label">WELCOME TO MY PORTFOLIO</p>
+
             <h1 className="name">
               Hello!!, I'm <strong>Sam Branham Christopher I</strong>
             </h1>
@@ -56,7 +59,13 @@ function App() {
               learning new skills and building projects.
             </p>
           </div>
-
+          <div className="home-buttons">
+          <a
+            href="#contact" className="btn-primary"
+          >
+            Get In Touch
+          </a>
+        </div>
         </div>
       </section>
 
@@ -66,7 +75,7 @@ function App() {
 
           <h2 className="section-title">About Me</h2>
 
-          <div className="card about-card">
+          <div className="card total-card">
             <p>
               I am interested in software development and enjoy learning new
               skills and building projects. I have also received medals and
@@ -85,7 +94,7 @@ function App() {
 
           <div className="skills-grid">
 
-            <div className="card skill-card">
+            <div className="card skill-card total-card">
               <h3>Frontend</h3>
               <ul>
                 <li>HTML5</li>
@@ -97,7 +106,7 @@ function App() {
               </ul>
             </div>
 
-            <div className="card skill-card">
+            <div className="card skill-card total-card">
               <h3>Programming</h3>
               <ul>
                 <li>Python (Learning)</li>
@@ -106,7 +115,7 @@ function App() {
               </ul>
             </div>
 
-            <div className="card skill-card">
+            <div className="card skill-card total-card">
               <h3>Tools & Development</h3>
               <ul>
                 <li>Git</li>
@@ -117,7 +126,7 @@ function App() {
               </ul>
             </div>
 
-            <div className="card skill-card">
+            <div className="card skill-card total-card">
               <h3>AI & Data Science</h3>
               <ul>
                 <li>Python for Data Science</li>
@@ -139,7 +148,7 @@ function App() {
 
           <div className="education-list">
 
-            <div className="card education-card">
+            <div className="card education-card total-card">
               <h3>10th Standard</h3>
               <h4>Bishop Francis Matriculation School</h4>
               <p className="location">
@@ -150,7 +159,7 @@ function App() {
               </span>
             </div>
 
-            <div className="card education-card">
+            <div className="card education-card total-card">
               <h3>11th and 12th Standard</h3>
               <h4>
                 Sri Ramakrishna Matriculation Higher Secondary School
@@ -163,7 +172,7 @@ function App() {
               </span>
             </div>
 
-            <div className="card education-card">
+            <div className="card education-card total-card">
               <h3>Under Graduation</h3>
               <h4>Rathinam Technical Campus</h4>
               <p className="degree">
@@ -186,7 +195,7 @@ function App() {
 
           <div className="achievements-grid">
 
-            <div className="card achievement-card">
+            <div className="card achievement-card total-card">
               <h3>
                 1. Meritorious and Student of the Year 2026 School Awards
               </h3>
@@ -196,7 +205,7 @@ function App() {
               </p>
             </div>
 
-            <div className="card achievement-card">
+            <div className="card achievement-card total-card">
               <h3>2. Innov8 Challenge</h3>
               <p>
                 Received an Innov8 Challenge award conducted at the national
@@ -205,7 +214,7 @@ function App() {
               </p>
             </div>
 
-            <div className="card achievement-card">
+            <div className="card achievement-card total-card">
               <h3>3. Trinity College London Keyboard Examination</h3>
               <p>
                 Completed the keyboard examination conducted by Trinity
@@ -217,69 +226,106 @@ function App() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="section bg-light">
-        <div className="container">
+     {/* Contact Section */}
+<section id="contact" className="section contact-section contact-card ">
+  <div className="container">
 
-          <h2 className="section-title">Contact</h2>
+    <h2 className="section-title">Let's Connect</h2>
 
-          <div className="card contact-card">
+    <div className="contact-wrapper">
 
-            <h3 className="contact-name">
-              Sam Branham Christopher I
-            </h3>
+      {/* Contact Introduction */}
+      <div className="contact-intro">
+        <span className="contact-label">GET IN TOUCH</span>
 
-            <div className="contact-info">
+        <h3>
+          Let's build something
+          <span> great together.</span>
+        </h3>
 
-              <p>
-                <strong>Email:</strong>{' '}
-                <a href="mailto:sambranhamchristopher@gmail.com">
-                  sambranhamchristopher@gmail.com
-                </a>
-              </p>
+        <p>
+          I'm always interested in learning, building projects,
+          and connecting with people who share a passion for
+          technology and software development.
+        </p>
 
-              <p>
-                <strong>GitHub:</strong>{' '}
-                <a
-                  href="https://github.com/sambc31"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  github.com/sambc31
-                </a>
-              </p>
+        <div className="social-links">
 
-              <p>
-                <strong>LinkedIn:</strong>{' '}
-                <a
-                  href="https://www.linkedin.com/in/sam-branham-christopher-i-"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  linkedin.com/in/sam-branham-christopher-i-
-                </a>
-              </p>
+          <a
+            href="https://github.com/sambc31"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-link"
+          >
+            <span className="social-icon">⌘</span>
+            <span>GitHub</span>
+            <span className="arrow">↗</span>
+          </a>
 
-              <p>
-                <strong>Phone:</strong>{' '}
-                <a href="tel:+919789358734">
-                  +91 9789358734
-                </a>
-              </p>
+          <a
+            href="https://www.linkedin.com/in/sam-branham-christopher-i-"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-link"
+          >
+            <span className="social-icon">in</span>
+            <span>LinkedIn</span>
+            <span className="arrow">↗</span>
+          </a>
 
-              <p>
-                <strong>Location:</strong>{' '}
-                <span className="address">
-                  Coimbatore, Tamil Nadu
-                </span>
-              </p>
+        </div>
+      </div>
 
-            </div>
+
+      {/* Contact Details */}
+      <div className="contact-details">
+
+        <a
+          href="mailto:sambranhamchristopher@gmail.com"
+          className="contact-detail"
+        >
+          <div className="detail-icon">✉</div>
+
+          <div>
+            <span>Email</span>
+            <strong>sambranhamchristopher@gmail.com</strong>
+          </div>
+
+          <span className="detail-arrow">→</span>
+        </a>
+
+
+        <a
+          href="tel:+919789358734"
+          className="contact-detail"
+        >
+          <div className="detail-icon">☎</div>
+
+          <div>
+            <span>Phone</span>
+            <strong>+91 9789358734</strong>
+          </div>
+
+          <span className="detail-arrow">→</span>
+        </a>
+
+
+        <div className="contact-detail">
+          <div className="detail-icon">⌖</div>
+
+          <div>
+            <span>Location</span>
+            <strong>Coimbatore, Tamil Nadu</strong>
           </div>
         </div>
-      </section>
+
+      </div>
 
     </div>
+
+  </div>
+</section>
+  </div>
   );
 }
 

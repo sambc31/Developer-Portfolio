@@ -1,17 +1,29 @@
 :root {
   --primary-color: #0056b3;
   --primary-hover: #004085;
+
   --light-bg: #f8f9fa;
   --white: #ffffff;
+
   --text-dark: #222222;
   --text-muted: #555555;
+
   --border-color: #e2e8f0;
+
   --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  --font-family:
+    'Segoe UI',
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
 }
 
 
-/* Reset */
+/* =========================
+   RESET
+========================= */
 
 * {
   box-sizing: border-box;
@@ -20,7 +32,9 @@
 }
 
 
-/* Page Settings */
+/* =========================
+   HTML & BODY
+========================= */
 
 html {
   scroll-behavior: smooth;
@@ -28,16 +42,55 @@ html {
 
 body {
   font-family: var(--font-family);
-  background-color: var(--white);
+
+  background:
+  linear-gradient(
+    135 deg,
+    #ffffff 0%
+    #85b5e4 100%
+  );
   color: var(--text-dark);
+
   line-height: 1.6;
+
+  overflow-x: hidden;
 }
+
+
+/* =========================
+   LINKS
+========================= */
 
 a {
   color: inherit;
 }
 
+
+/* =========================
+   IMAGES
+========================= */
+
 img {
   display: block;
   max-width: 100%;
+}
+
+
+/* =========================
+   BUTTONS & LINKS
+========================= */
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* =========================
+   SELECTION
+========================= */
+
+::selection {
+  background-color: var(--primary-color);
+  color: var(--white);
 }
