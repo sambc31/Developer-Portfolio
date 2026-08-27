@@ -66,7 +66,7 @@
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -101,9 +101,9 @@
   color: var(--text-muted);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: var(--white);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  padding: 24px;
+  border: 2px solid var(--border-color);
+  border-radius: 40px;
+  padding: 80px;
   box-shadow: var(--card-shadow);
 }
 
@@ -619,11 +619,6 @@
   opacity: 0.5 !important;
 }
 
-
-/* =========================
-   CONTACT ANIMATION
-========================= */
-
 .contact-intro {
   animation: contactLeft 0.8s ease both;
 }
@@ -687,11 +682,6 @@
     transform: translateY(0);
   }
 }
-
-
-/* =========================
-   MOBILE
-========================= */
 
 @media (max-width: 768px) {
 
@@ -803,7 +793,6 @@
 
 }
 
-
 /* Smaller Phones */
 
 @media (max-width: 480px) {
@@ -910,10 +899,6 @@
     #85b5e4 100%
   );
 }
-
-/* =========================
-   EXTRA ANIMATIONS
-========================= */
 
 @keyframes fadeUp {
   from {
@@ -1116,10 +1101,6 @@
   animation: slideRight 0.6s ease 0.6s both;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
-
 .hero-section {
   position: relative;
   min-height: 100vh;
@@ -1139,11 +1120,6 @@
   box-sizing: border-box;
 }
 
-
-/* =========================
-   MAIN CONTAINER
-========================= */
-
 .hero-container {
   position: relative;
   z-index: 2;
@@ -1157,11 +1133,6 @@
 
   align-items: center;
 }
-
-
-/* =========================
-   PROFILE CARD
-========================= */
 
 .profile-card {
   width: 100%;
@@ -1194,11 +1165,6 @@
   box-shadow:
     0 30px 65px rgba(35, 75, 150, 0.17);
 }
-
-
-/* =========================
-   PROFILE IMAGE
-========================= */
 
 .profile-image-wrapper {
   width: 315px;
@@ -1236,11 +1202,6 @@
 
   border: 5px solid white;
 }
-
-
-/* =========================
-   SOCIAL LINKS
-========================= */
 
 .social-links {
   display: flex;
@@ -1294,11 +1255,6 @@
   color: #1764da;
 }
 
-
-/* =========================
-   RIGHT CONTENT
-========================= */
-
 .hero-content {
   max-width: 760px;
 }
@@ -1327,11 +1283,6 @@
   margin-bottom: 35px;
 }
 
-
-/* =========================
-   HEADING
-========================= */
-
 .hero-content h1 {
   color: #17243b;
 
@@ -1353,11 +1304,6 @@
 
   font-size: clamp(38px, 4.3vw, 58px);
 }
-
-
-/* =========================
-   COURSE BADGE
-========================= */
 
 .course-badge {
   display: inline-flex;
@@ -1391,10 +1337,6 @@
 }
 
 
-/* =========================
-   COLLEGE
-========================= */
-
 .college-name {
   display: flex;
 
@@ -1414,11 +1356,6 @@
   color: #263a58;
 }
 
-
-/* =========================
-   DESCRIPTION
-========================= */
-
 .hero-description {
   max-width: 730px;
 
@@ -1434,11 +1371,6 @@
 .hero-description strong {
   color: #26344b;
 }
-
-
-/* =========================
-   BUTTONS
-========================= */
 
 .hero-buttons {
   display: flex;
@@ -1507,11 +1439,6 @@
   box-shadow:
     0 12px 25px rgba(40, 85, 160, 0.15);
 }
-
-
-/* =========================
-   DECORATIVE DOTS
-========================= */
 
 .dot-pattern {
   position: absolute;
@@ -1771,6 +1698,10 @@
   }
 }
 
-.name-tag {
-  font-size: 35px;
+
+.about-text {
+  font-size: 18px;
+  color: var(--text-muted);
+ text-decoration:solid;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }

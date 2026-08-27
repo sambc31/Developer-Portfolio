@@ -201,8 +201,6 @@ function App() {
               and building projects.
             </p>
 
-
-            {/* Hero buttons */}
             <div className="hero-buttons">
 
               <a
@@ -212,22 +210,15 @@ function App() {
                 <span>👤</span>
                 Get In Touch
               </a>
-
             </div>
-
           </div>
-
         </div>
 
-
-        {/* Bottom decorative line */}
         <div className="bottom-decoration">
           <div className="bottom-dot"></div>
         </div>
-
       </section>
 
-      
       <section
         id="about"
         className="section bg-light"
@@ -238,21 +229,17 @@ function App() {
           <h2 className="section-title">
             About Me
           </h2>
-        
-        <div className="circle-decoration circle-one"></div>
-        <div className="circle-decoration circle-two"></div>
-        <div className="circle-decoration circle-three"></div>
-
 
           <div className="card total-card">
 
-            <p>
+            <div className="about-text">
               <strong>
-                I am interested in software development and enjoy learning
-                new skills and building projects. I have also received medals
-                and awards in hackathons for agriculture-related projects.
-              </strong>
-            </p>
+                I'm Sam Branham Christopher, a B.Tech Artificial Intelligence and Data Science student at Rathinam Technical Campus with a growing interest in software development and technology.
+I enjoy learning new technologies, exploring how applications are built, and turning ideas into practical projects. My journey into development has introduced me to technologies such as HTML, CSS, JavaScript, and React, while also helping me understand the importance of problem-solving and continuous learning.
+  I have also participated in hackathons and received medals and awards for projects, including projects focused on solving real-world problems through technology. These experiences have motivated me to explore more areas of software development and AI.
+My goal is to continuously improve my technical skills, build meaningful projects, and grow into a developer capable of creating technology that is both useful and impactful.
+             </strong>
+            </div>
 
           </div>
 
@@ -260,9 +247,8 @@ function App() {
 
       </section>
 
-
-      {/* ================= SKILLS SECTION ================= */}
       <section
+
         id="skills"
         className="section"
       >
@@ -273,10 +259,8 @@ function App() {
             Skills
           </h2>
 
-
           <div className="skills-grid">
 
-            {/* Frontend */}
             <div className="card skill-card total-card">
 
               <h3>
@@ -296,8 +280,6 @@ function App() {
 
             </div>
 
-
-            {/* Programming */}
             <div className="card skill-card total-card">
 
               <h3>
@@ -314,8 +296,6 @@ function App() {
 
             </div>
 
-
-            {/* Tools */}
             <div className="card skill-card total-card">
 
               <h3>
@@ -334,8 +314,6 @@ function App() {
 
             </div>
 
-
-            {/* AI & Data Science */}
             <div className="card skill-card total-card">
 
               <h3>
@@ -360,7 +338,6 @@ function App() {
       </section>
 
 
-      {/* ================= EDUCATION SECTION ================= */}
       <section
         id="education"
         className="section bg-light"
@@ -398,8 +375,6 @@ function App() {
 
             </div>
 
-
-            {/* 11th and 12th */}
             <div className="card education-card total-card">
 
               <h3>
@@ -423,7 +398,6 @@ function App() {
             </div>
 
 
-            {/* Degree */}
             <div className="card education-card total-card">
 
               <h3>
@@ -452,8 +426,6 @@ function App() {
 
       </section>
 
-
-      {/* ================= ACHIEVEMENTS SECTION ================= */}
       <section
         id="achievements"
         className="section"
@@ -468,7 +440,6 @@ function App() {
 
           <div className="achievements-grid">
 
-            {/* Achievement 1 */}
             <div className="card achievement-card total-card">
 
               <h3>
@@ -485,7 +456,6 @@ function App() {
             </div>
 
 
-            {/* Achievement 2 */}
             <div className="card achievement-card total-card">
 
               <h3>
@@ -503,7 +473,6 @@ function App() {
             </div>
 
 
-            {/* Achievement 3 */}
             <div className="card achievement-card total-card">
 
               <h3>
@@ -525,8 +494,6 @@ function App() {
 
       </section>
 
-
-      {/* ================= CONTACT SECTION ================= */}
       <section
         id="contact"
         className="section contact-section"
@@ -541,7 +508,6 @@ function App() {
 
           <div className="contact-wrapper">
 
-            {/* Contact Introduction */}
             <div className="contact-intro">
 
               <span className="contact-label">
@@ -561,8 +527,6 @@ function App() {
                 technology and software development.
               </p>
 
-
-              {/* Social Links */}
               <div className="social-links">
 
                 <a
@@ -613,7 +577,6 @@ function App() {
             </div>
 
 
-            {/* Contact Details */}
             <div className="contact-details">
 
               {/* Email */}
@@ -643,7 +606,6 @@ function App() {
               </a>
 
 
-              {/* Phone */}
               <a
                 href="tel:+919789358734"
                 className="contact-detail"
@@ -670,7 +632,6 @@ function App() {
               </a>
 
 
-              {/* Location */}
               <div className="contact-detail">
 
                 <div className="detail-icon">
