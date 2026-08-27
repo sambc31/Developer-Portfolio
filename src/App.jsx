@@ -33,7 +33,7 @@ function App() {
             />
           </div>
           <div className="home-text">
-            <h1 className="name">HELLO , I'm </h1> <h1 className="name"><strong>Sam Branham Christopher I</strong></h1>
+            <h1 className="name">HELLO !! , I'm </h1> <h1 className="name"><strong>Sam Branham Christopher I</strong></h1>
             <h2 className="title">B.Tech Artificial Intelligence & Data Science Student</h2>
             <h3 className="college">Rathinam Technical Campus</h3>
             <p className="intro">
