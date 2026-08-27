@@ -170,17 +170,14 @@ function App() {
 
             <div className="course-badge">
 
-              <span className="badge-icon">
-                🎓
-              </span>
-
+              <span className="badge-icon"> 🎓    </span>
+                
               <strong>
                 B.Tech Artificial Intelligence &amp; Data Science Student
               </strong>
 
             </div>
-
-
+            
             {/* College */}
             <div className="college-name">
 

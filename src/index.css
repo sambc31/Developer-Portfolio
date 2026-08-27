@@ -20,21 +20,11 @@
     sans-serif;
 }
 
-
-/* =========================
-   RESET
-========================= */
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-
-/* =========================
-   HTML & BODY
-========================= */
 
 html {
   scroll-behavior: smooth;
@@ -69,38 +59,20 @@ body {
   overflow-x: hidden;
 }
 
-/* =========================
-   LINKS
-========================= */
-
 a {
   color: inherit;
 }
 
-
-/* =========================
-   IMAGES
-========================= */
 
 img {
   display: block;
   max-width: 100%;
 }
 
-
-/* =========================
-   BUTTONS & LINKS
-========================= */
-
 button,
 a {
   -webkit-tap-highlight-color: transparent;
 }
-
-
-/* =========================
-   SELECTION
-========================= */
 
 ::selection {
   background-color: var(--primary-color);
