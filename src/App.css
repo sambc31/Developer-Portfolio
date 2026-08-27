@@ -24,6 +24,7 @@
 /* Main Layout */
 
 .btn-primary, .btn-secondary {
+  animation: pulseGlow 2.5s infinite;
   display: inline-block;
   padding: 10px 20px;
   border: 2px solid var(--primary-color);
@@ -58,6 +59,7 @@
 }
 
 .home-buttons {
+  animation: pulseGlow 2.5s infinite;
   display: flex;
   gap: 15px;
   margin-top: 20px;
@@ -96,6 +98,7 @@
 }
 
 .card {
+  color: var(--text-muted);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: var(--white);
   border: 1px solid var(--border-color);
@@ -169,11 +172,7 @@
 
 .home-section {
   padding: 90px 0;
-  background: linear-gradient(
-    135deg,
-    #ffffff 0%,
-    #85b5e4 100%
-  );
+  background: transparent;
 }
 
 .home-container {
@@ -184,6 +183,7 @@
 }
 
 .profile-photo {
+  animation: floatPhoto 4s ease-in-out infinite;
   width: 220px;
   height: 220px;
   border-radius: 50%;
@@ -199,7 +199,23 @@
   
 
 .home-text {
+  position: relative;
   flex: 1;
+
+  padding: 35px 40px;
+
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 24px;
+
+  box-shadow:
+    0 15px 40px rgba(0, 86, 179, 0.10);
+
+  backdrop-filter: blur(10px);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
 }
 
 .name {
@@ -241,6 +257,7 @@
 /* About Section */
 
 .about-card {
+  animation: fadeUp 0.8s ease both;
   font-size: 1.05rem;
   color: var(--text-dark);
   line-height: 1.8;
@@ -849,8 +866,8 @@
 }
 
 .card:hover{
-  transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
 }
 
 .social-links {
@@ -886,15 +903,6 @@
   );
 }
 
-.about-card{
-  background: linear-gradient(
-    135deg,
-    #66c0e3 0%,
-    #f0f0f0 45%,
-    #4b86c1 100%
-  );
-}
-
 .total-card{
   background: linear-gradient(
     135deg,
@@ -903,3 +911,866 @@
   );
 }
 
+/* =========================
+   EXTRA ANIMATIONS
+========================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes floatPhoto {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 86, 179, 0.15);
+  }
+
+  70% {
+    box-shadow: 0 0 0 12px rgba(0, 86, 179, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 86, 179, 0);
+  }
+}
+
+.intro-label {
+  animation: slideLeft 0.7s ease both;
+}
+
+.name {
+  animation: slideLeft 0.8s ease 0.15s both;
+}
+
+.title {
+  animation: slideLeft 0.8s ease 0.3s both;
+}
+
+.college {
+  animation: slideLeft 0.8s ease 0.45s both;
+}
+
+.intro {
+  animation: slideLeft 0.8s ease 0.6s both;
+}
+
+.home-buttons {
+  animation: fadeUp 0.8s ease 0.75s both;
+}
+
+#skills .skill-card {
+  opacity: 0;
+}
+
+#skills.section-visible .skill-card:nth-child(1) {
+  animation: fadeUp 0.6s ease 0.1s both;
+}
+
+#skills.section-visible .skill-card:nth-child(2) {
+  animation: fadeUp 0.6s ease 0.25s both;
+}
+
+#skills.section-visible .skill-card:nth-child(3) {
+  animation: fadeUp 0.6s ease 0.4s both;
+}
+
+#skills.section-visible .skill-card:nth-child(4) {
+  animation: fadeUp 0.6s ease 0.55s both;
+}
+
+#about .about-card {
+  opacity: 0;
+}
+
+#about.section-visible .about-card {
+  animation: fadeUp 0.8s ease both;
+}
+
+#achievements .achievement-card {
+  opacity: 0;
+}
+
+#achievements.section-visible .achievement-card:nth-child(1) {
+  animation: scaleIn 0.6s ease 0.1s both;
+}
+
+#achievements.section-visible .achievement-card:nth-child(2) {
+  animation: scaleIn 0.6s ease 0.3s both;
+}
+
+#achievements.section-visible .achievement-card:nth-child(3) {
+  animation: scaleIn 0.6s ease 0.5s both;
+}
+
+#education .education-card {
+  opacity: 0;
+}
+
+#education.section-visible .education-card:nth-child(1) {
+  animation: slideLeft 0.7s ease 0.1s both;
+}
+
+#education.section-visible .education-card:nth-child(2) {
+  animation: slideRight 0.7s ease 0.3s both;
+}
+
+#education.section-visible .education-card:nth-child(3) {
+  animation: slideLeft 0.7s ease 0.5s both;
+}
+
+
+#contact .contact-label,
+#contact .contact-intro h3,
+#contact .contact-intro p,
+#contact .social-link,
+#contact .contact-detail {
+  opacity: 0;
+}
+
+#contact.section-visible .contact-label {
+  animation: fadeUp 0.6s ease 0.1s both;
+}
+
+#contact.section-visible .contact-intro h3 {
+  animation: slideLeft 0.7s ease 0.25s both;
+}
+
+#contact.section-visible .contact-intro p {
+  animation: slideLeft 0.7s ease 0.4s both;
+}
+
+#contact.section-visible .social-link:nth-child(1) {
+  animation: fadeUp 0.6s ease 0.55s both;
+}
+
+#contact.section-visible .social-link:nth-child(2) {
+  animation: fadeUp 0.6s ease 0.7s both;
+}
+
+#contact.section-visible .contact-detail:nth-child(1) {
+  animation: slideRight 0.6s ease 0.3s both;
+}
+
+#contact.section-visible .contact-detail:nth-child(2) {
+  animation: slideRight 0.6s ease 0.45s both;
+}
+
+#contact.section-visible .contact-detail:nth-child(3) {
+  animation: slideRight 0.6s ease 0.6s both;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at 15% 20%, rgba(75, 130, 255, 0.08), transparent 25%),
+    radial-gradient(circle at 85% 70%, rgba(75, 130, 255, 0.07), transparent 30%),
+    #f5f8ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 60px 40px;
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.hero-container {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1380px;
+
+  display: grid;
+  grid-template-columns: 410px 1fr;
+  gap: 80px;
+
+  align-items: center;
+}
+
+
+/* =========================
+   PROFILE CARD
+========================= */
+
+.profile-card {
+  width: 100%;
+  min-height: 510px;
+
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(120, 155, 230, 0.2);
+  border-radius: 28px;
+
+  box-shadow:
+    0 20px 50px rgba(35, 75, 150, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 45px 35px;
+  box-sizing: border-box;
+
+  transition: all 0.4s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 30px 65px rgba(35, 75, 150, 0.17);
+}
+
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.profile-image-wrapper {
+  width: 315px;
+  height: 315px;
+
+  border-radius: 50%;
+
+  padding: 7px;
+
+  background: linear-gradient(
+    135deg,
+    #72a5ff,
+    #ffffff,
+    #4b7ff0
+  );
+
+  box-shadow:
+    0 0 0 5px rgba(85, 135, 240, 0.12),
+    0 15px 40px rgba(40, 90, 190, 0.2);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation: floatingImage 4s ease-in-out infinite;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  border: 5px solid white;
+}
+
+
+/* =========================
+   SOCIAL LINKS
+========================= */
+
+.social-links {
+  display: flex;
+  gap: 35px;
+
+  margin-top: 38px;
+}
+
+.social-btn {
+  width: 70px;
+  height: 70px;
+
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  font-size: 28px;
+  font-weight: 700;
+
+  color: #1356cf;
+
+  box-shadow:
+    0 8px 20px rgba(30, 80, 160, 0.12);
+
+  transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+  transform: translateY(-7px) scale(1.05);
+
+  box-shadow:
+    0 15px 30px rgba(30, 80, 160, 0.2);
+}
+
+.github {
+  color: #111;
+}
+
+.linkedin {
+  color: #1267d9;
+  font-size: 26px;
+}
+
+.email {
+  color: #1764da;
+}
+
+
+/* =========================
+   RIGHT CONTENT
+========================= */
+
+.hero-content {
+  max-width: 760px;
+}
+
+.welcome-text {
+  color: #164db8;
+
+  font-size: 18px;
+  font-weight: 800;
+
+  letter-spacing: 4px;
+
+  margin: 0 0 20px;
+
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.title-line {
+  width: 75px;
+  height: 4px;
+
+  background: #70a0f5;
+
+  border-radius: 10px;
+
+  margin-bottom: 35px;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.hero-content h1 {
+  color: #17243b;
+
+  font-size: clamp(45px, 5vw, 64px);
+
+  line-height: 1.12;
+
+  margin: 0;
+
+  font-weight: 800;
+}
+
+.hero-content h1 span {
+  display: block;
+
+  color: #1358ce;
+
+  margin-top: 10px;
+
+  font-size: clamp(38px, 4.3vw, 58px);
+}
+
+
+/* =========================
+   COURSE BADGE
+========================= */
+
+.course-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 35px;
+
+  padding: 15px 22px;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  border-radius: 12px;
+
+  color: #1554c4;
+
+  box-shadow:
+    0 8px 25px rgba(40, 85, 160, 0.12);
+
+  transition: all 0.3s ease;
+}
+
+.course-badge:hover {
+  transform: translateX(5px);
+}
+
+.badge-icon {
+  font-size: 22px;
+}
+
+
+/* =========================
+   COLLEGE
+========================= */
+
+.college-name {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-top: 28px;
+
+  color: #29364c;
+
+  font-size: 18px;
+}
+
+.college-name span {
+  font-size: 25px;
+  color: #263a58;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.hero-description {
+  max-width: 730px;
+
+  color: #354258;
+
+  font-size: 18px;
+
+  line-height: 1.9;
+
+  margin-top: 25px;
+}
+
+.hero-description strong {
+  color: #26344b;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons {
+  display: flex;
+
+  gap: 25px;
+
+  margin-top: 38px;
+}
+
+.primary-btn,
+.secondary-btn {
+  min-width: 245px;
+
+  padding: 18px 30px;
+
+  border-radius: 12px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 13px;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background: linear-gradient(
+    135deg,
+    #1461df,
+    #1851c8
+  );
+
+  color: white;
+
+  box-shadow:
+    0 10px 25px rgba(25, 88, 210, 0.25);
+}
+
+.primary-btn:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 17px 35px rgba(25, 88, 210, 0.35);
+}
+
+.secondary-btn {
+  color: #164fbd;
+
+  border: 2px solid #6b91dc;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.secondary-btn:hover {
+  background: white;
+
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 12px 25px rgba(40, 85, 160, 0.15);
+}
+
+
+/* =========================
+   DECORATIVE DOTS
+========================= */
+
+.dot-pattern {
+  position: absolute;
+
+  top: 65px;
+  left: 45px;
+
+  width: 75px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 8px);
+
+  gap: 12px;
+
+  opacity: 0.65;
+}
+
+.dot-pattern span {
+  width: 7px;
+  height: 7px;
+
+  background: #8db4fa;
+
+  border-radius: 50%;
+
+  animation: dotPulse 2s ease-in-out infinite;
+}
+
+.dot-pattern span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.dot-pattern span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.dot-pattern span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+
+/* circle*/ 
+
+.circle-decoration {
+  position: absolute;
+
+  border: 3px solid rgba(115, 155, 235, 0.18);
+
+  border-radius: 50%;
+}
+
+.circle-one {
+  width: 70px;
+  height: 70px;
+
+  right: 90px;
+  top: 250px;
+}
+
+.circle-two {
+  width: 350px;
+  height: 350px;
+
+  right: -90px;
+  bottom: -20px;
+}
+
+.circle-three {
+  width: 230px;
+  height: 230px;
+
+  right: 0;
+  bottom: 20px;
+}
+
+/*decoration*/
+
+.bottom-decoration {
+  position: absolute;
+
+  bottom: -25px;
+  left: 45px;
+
+  width: 300px;
+  height: 90px;
+
+  border-top: 3px dashed rgba(65, 125, 235, 0.25);
+
+  border-radius: 50%;
+}
+
+.bottom-dot {
+  position: absolute;
+
+  width: 14px;
+  height: 14px;
+
+  background: #1764df;
+
+  border-radius: 50%;
+
+  top: -8px;
+  left: 0;
+
+  box-shadow: 0 0 0 6px rgba(23, 100, 223, 0.08);
+}
+
+/*Animations*/
+
+@keyframes floatingImage {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dotPulse {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.25);
+  }
+}
+
+/* mobile*/ 
+
+@media (max-width: 750px) {
+
+  .hero-section {
+    padding: 50px 20px;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+    text-align: center;
+  }
+
+  .profile-card {
+    max-width: 380px;
+
+    min-height: auto;
+
+    margin: 0 auto;
+
+    padding: 35px 20px;
+  }
+
+  .profile-image-wrapper {
+    width: 220px;
+    height: 220px;
+  }
+
+  .social-links {
+    margin-top: 28px;
+  }
+
+  .hero-content {
+    margin: 0 auto;
+  }
+
+  .welcome-text {
+    font-size: 14px;
+
+    letter-spacing: 2px;
+  }
+
+  .title-line {
+    margin: 0 auto 25px;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .hero-content h1 span {
+    font-size: 34px;
+  }
+
+  .course-badge {
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 14px;
+
+    text-align: left;
+  }
+
+  .college-name {
+    justify-content: center;
+
+    font-size: 16px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+
+    max-width: 330px;
+
+    box-sizing: border-box;
+  }
+
+  .dot-pattern {
+    left: 20px;
+    top: 25px;
+  }
+
+  .code-decoration {
+    right: 20px;
+    top: 20px;
+
+    width: 55px;
+    height: 45px;
+
+    font-size: 18px;
+  }
+
+  .circle-one {
+    display: none;
+  }
+}
+
+.name-tag {
+  font-size: 35px;
+}

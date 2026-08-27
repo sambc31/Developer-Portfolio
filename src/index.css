@@ -44,18 +44,30 @@ body {
   font-family: var(--font-family);
 
   background:
-  linear-gradient(
-    135 deg,
-    #ffffff 0%
-    #85b5e4 100%
-  );
-  color: var(--text-dark);
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(0, 86, 179, 0.10),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 40%,
+      rgba(99, 102, 241, 0.08),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #92b8ec 45%,
+      #7e9edd 100%
+    );
 
+  background-attachment: fixed;
+
+  color: var(--text-dark);
   line-height: 1.6;
 
   overflow-x: hidden;
 }
-
 
 /* =========================
    LINKS
